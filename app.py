@@ -30,7 +30,7 @@ def page_presentation():
 
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
-        st.image("sab.jpg", caption="ATEF FETOUI", width=200)
+        st.image("sab.jpg", caption="Saber Fetoui", width=200)
 
     st.markdown("""
     ## Présentation
