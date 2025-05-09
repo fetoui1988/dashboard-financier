@@ -28,10 +28,6 @@ base_cols = ['Account', 'Year', 'Scenario', 'business_unit', 'Currency']
 def page_presentation():
     st.title("📊 Projet - Dashboard Financier")
 
-    col1, col2, col3 = st.columns([1,2,1])
-    with col2:
-        st.image("sab.jpg", caption="Saber Fetoui", width=200)
-
     st.markdown("""
     ## Présentation
     Bienvenue sur ce tableau de bord financier réalisé avec **Python** et **Streamlit**.
@@ -44,7 +40,15 @@ def page_presentation():
     - 💰 Suivi des marges bénéficiaires (trimestre et année)
 
     ### Réalisé par
-    **ATEF FETOUI**  """)
+    **ATEF FETOUI**
+    """)
+
+    st.markdown("---")  # ligne de séparation
+
+    # 📸 Photo centrée en bas
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("sab.jpg", caption="ATEF FETOUI", width=200)
 
 # PAGE 1 : Données originales
 def page_donnees_originales():
